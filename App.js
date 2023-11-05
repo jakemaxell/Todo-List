@@ -1,5 +1,5 @@
 import { StatusBar } from 'expo-status-bar';
-import { Keyboard, KeyboardAvoidingView, Platform, StyleSheet, Text, TextInput, TouchableOpacity, View, ScrollView } from 'react-native';
+import { Keyboard, KeyboardAvoidingView, Platform, StyleSheet, Text, TextInput, TouchableOpacity, View, ScrollView, SafeAreaView } from 'react-native';
 import Task from "./components/Task";
 import React, { useState } from 'react';
 
@@ -22,7 +22,7 @@ export default function App() {
   }
 
   return (
-    <View style={styles.container}>
+    <SafeAreaView style={styles.container}>
       
     {/* Today's Tasks */}
       <View style={styles.taskWrapper}>
@@ -58,7 +58,7 @@ export default function App() {
 
       </KeyboardAvoidingView>
 
-    </View>
+    </SafeAreaView>
   );
 }
 
@@ -77,6 +77,7 @@ const styles = StyleSheet.create({
   },
   items: {
     marginTop: 30,
+    paddingBottom: 100,
     flexGrow: 1,
   },
   writeTaskWrapper: {
