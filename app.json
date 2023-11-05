@@ -25,6 +25,12 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "3a155520-5f6b-4f12-a3cf-0d1f403443c8"
+      }
+    },
+    "owner": "jakemaxell"
   }
 }
